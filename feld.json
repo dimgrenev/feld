@@ -1,0 +1,33 @@
+{
+  "name": "feld",
+  "description": "Минималистичная библиотека React-компонентов для UserFace и любых declarative UI движков.",
+  "version": "1.0.0",
+  "author": "Dima Grenev",
+  "components": [
+    {
+      "name": "Button",
+      "description": "A standard button component.",
+      "properties": [
+        { "name": "text", "type": "string", "description": "The text to display on the button." },
+        { "name": "variant", "type": "string", "description": "The style variant of the button.", "defaultValue": "primary", "options": ["primary", "secondary"] },
+        { "name": "meta", "type": "object", "properties": { "className": { "type": "string" } } }
+      ],
+      "events": [
+        { "name": "onClick", "description": "Event fired when the button is clicked." }
+      ]
+    },
+    {
+      "name": "Card",
+      "description": "A card component.",
+      "properties": [
+        { "name": "variant", "type": "'default' | 'elevated'", "description": "variant property" },
+        { "name": "media", "type": "FeldSpec[]", "description": "media property" },
+        { "name": "header", "type": "FeldSpec[]", "description": "header property" },
+        { "name": "content", "type": "FeldSpec[]", "description": "content property" },
+        { "name": "footer", "type": "FeldSpec[]", "description": "footer property" },
+        { "name": "children", "type": "never", "description": "children property" }
+      ],
+      "events": []
+    }
+  ]
+} 

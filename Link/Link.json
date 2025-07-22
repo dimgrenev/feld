@@ -1,0 +1,9 @@
+{
+  "name": "Link",
+  "description": "Link component.",
+  "properties": [
+    { "name": "href", "type": "string", "description": "Link URL." },
+    { "name": "children", "type": "React.ReactNode", "description": "Link text." }
+  ],
+  "events": []
+} 

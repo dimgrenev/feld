@@ -1,0 +1,11 @@
+{
+  "name": "Radio",
+  "description": "Radio button component.",
+  "properties": [
+    { "name": "checked", "type": "boolean", "description": "Is checked." },
+    { "name": "onChange", "type": "function", "description": "Change handler." }
+  ],
+  "events": [
+    { "name": "onChange", "description": "Event fired when radio changes." }
+  ]
+} 

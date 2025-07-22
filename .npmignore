@@ -1,0 +1,14 @@
+node_modules
+*.test.*
+*.spec.ts
+*.spec.js
+*.md
+src/
+dist/
+build/
+.vscode/
+.git/
+.gitignore
+.eslintrc*
+tsconfig.*
+*.log 

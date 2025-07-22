@@ -1,0 +1,11 @@
+{
+  "name": "Accordion",
+  "description": "Accordion component.",
+  "properties": [
+    { "name": "items", "type": "AccordionItem[]", "description": "Accordion items." },
+    { "name": "defaultActiveKey", "type": "string", "description": "Default active key." }
+  ],
+  "events": [
+    { "name": "onChange", "description": "Event fired when accordion changes." }
+  ]
+} 

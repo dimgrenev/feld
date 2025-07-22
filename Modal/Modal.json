@@ -1,0 +1,11 @@
+{
+  "name": "Modal",
+  "description": "Modal component.",
+  "properties": [
+    { "name": "open", "type": "boolean", "description": "Is modal open." },
+    { "name": "onClose", "type": "function", "description": "Close handler." }
+  ],
+  "events": [
+    { "name": "onClose", "description": "Event fired when modal closes." }
+  ]
+} 

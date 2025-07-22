@@ -1,0 +1,9 @@
+{
+  "name": "Code",
+  "description": "Code block component.",
+  "properties": [
+    { "name": "code", "type": "string", "description": "Code to display." },
+    { "name": "language", "type": "string", "description": "Programming language." }
+  ],
+  "events": []
+} 

@@ -1,0 +1,9 @@
+{
+  "name": "Progress",
+  "description": "Progress bar component.",
+  "properties": [
+    { "name": "value", "type": "number", "description": "Progress value." },
+    { "name": "max", "type": "number", "description": "Max value." }
+  ],
+  "events": []
+} 

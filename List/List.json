@@ -1,0 +1,8 @@
+{
+  "name": "List",
+  "description": "List component.",
+  "properties": [
+    { "name": "items", "type": "string[]", "description": "List items." }
+  ],
+  "events": []
+} 

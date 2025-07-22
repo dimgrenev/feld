@@ -1,0 +1,13 @@
+{
+  "name": "Card",
+  "description": "A card component.",
+  "properties": [
+    { "name": "variant", "type": "'default' | 'elevated'", "description": "variant property" },
+    { "name": "media", "type": "FeldSpec[]", "description": "media property" },
+    { "name": "header", "type": "FeldSpec[]", "description": "header property" },
+    { "name": "content", "type": "FeldSpec[]", "description": "content property" },
+    { "name": "footer", "type": "FeldSpec[]", "description": "footer property" },
+    { "name": "children", "type": "never", "description": "children property" }
+  ],
+  "events": []
+} 

@@ -1,0 +1,30 @@
+.feld-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.feld-card-elevated {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.feld-card-media {
+  width: 100%;
+}
+
+.feld-card-header,
+.feld-card-content,
+.feld-card-footer {
+  padding: 16px;
+}
+
+.feld-card-header {
+  border-bottom: 1px solid #ddd;
+}
+
+.feld-card-footer {
+  border-top: 1px solid #ddd;
+  margin-top: auto;
+}

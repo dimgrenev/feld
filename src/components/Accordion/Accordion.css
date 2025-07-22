@@ -1,0 +1,33 @@
+.feld-accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.feld-accordion-title {
+  background-color: #f7f7f7;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.feld-accordion-title:hover,
+.feld-accordion-title[aria-expanded="true"] {
+  background-color: #eee;
+}
+
+.feld-accordion-content {
+  padding: 0 18px;
+  background-color: white;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out, padding 0.2s ease-out;
+}
+
+.feld-accordion-title[aria-expanded="true"] + .feld-accordion-content {
+  max-height: 500px; /* Adjust as needed */
+  padding: 18px;
+} 

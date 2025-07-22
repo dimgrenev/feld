@@ -1,0 +1,9 @@
+{
+  "name": "Image",
+  "description": "Image component.",
+  "properties": [
+    { "name": "src", "type": "string", "description": "Image source." },
+    { "name": "alt", "type": "string", "description": "Alt text." }
+  ],
+  "events": []
+} 
