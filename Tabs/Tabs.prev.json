@@ -1,0 +1,80 @@
+{
+  "name": "Tabs Preview Data",
+  "description": "Sample data for Tabs component preview",
+  "variants": [
+    {
+      "name": "Default Tabs",
+      "props": {
+        "id": "default-tabs",
+        "tabs": [
+          {
+            "id": "tab1",
+            "label": "Tab 1",
+            "content": "Content for tab 1"
+          },
+          {
+            "id": "tab2",
+            "label": "Tab 2",
+            "content": "Content for tab 2"
+          },
+          {
+            "id": "tab3",
+            "label": "Tab 3",
+            "content": "Content for tab 3"
+          }
+        ],
+        "defaultActiveTab": "tab1"
+      }
+    },
+    {
+      "name": "Pills Tabs",
+      "props": {
+        "id": "pills-tabs",
+        "tabs": [
+          {
+            "id": "home",
+            "label": "Home",
+            "content": "Welcome to the home page"
+          },
+          {
+            "id": "profile",
+            "label": "Profile",
+            "content": "User profile information"
+          },
+          {
+            "id": "settings",
+            "label": "Settings",
+            "content": "Application settings"
+          }
+        ],
+        "variant": "pills",
+        "defaultActiveTab": "home"
+      }
+    },
+    {
+      "name": "Tabs with Disabled",
+      "props": {
+        "id": "tabs-disabled",
+        "tabs": [
+          {
+            "id": "active",
+            "label": "Active Tab",
+            "content": "This tab is active"
+          },
+          {
+            "id": "disabled",
+            "label": "Disabled Tab",
+            "content": "This content won't show",
+            "disabled": true
+          },
+          {
+            "id": "another",
+            "label": "Another Tab",
+            "content": "Another active tab"
+          }
+        ],
+        "defaultActiveTab": "active"
+      }
+    }
+  ]
+}

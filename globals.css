@@ -1,0 +1,264 @@
+/* 
+  Глобальные стили Feld Design System
+  Восстановлены из feld_legacy
+*/
+
+@import './variables.css';
+
+/*
+  NOTE: Пути к файлам шрифтов — предположение. 
+  Они должны лежать в /public/fonts/ в приложении grenev, 
+  чтобы быть доступными по этим URL.
+*/
+@font-face {
+  font-family: 'Akt';
+  src: url('./fonts/Akt.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Типографическая система */
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--black-04);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Убираем стандартную обводку у кнопок при фокусе */
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
+/* Fix for placeholder text styling in inputs and textareas */
+input::placeholder,
+textarea::placeholder {
+  font: inherit;
+  color: var(--black-24); /* A sensible default for placeholder text */
+  transition: color 0.2s ease-in-out;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+  color: var(--black-48);
+}
+
+h1, .h1 {
+  font-size: var(--h1-size);
+  line-height: var(--h1-line-height);
+  font-weight: var(--font-weight-semibold);
+  margin: 24px 0px;
+}
+
+h2, .h2 {
+  font-size: var(--h2-size);
+  line-height: var(--h2-line-height);
+  font-weight: var(--font-weight-semibold);
+  margin: 16px 0px;
+}
+
+h3, .h3 {
+  font-size: var(--h3-size);
+  line-height: var(--h3-line-height);
+  font-weight: var(--font-weight-semibold);
+  margin: 8px 0px;
+}
+
+p {
+  font-size: var(--text-m-size);
+  line-height: var(--text-m-line-height);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: 8px;
+}
+
+.text-l {
+  font: inherit;
+  font-size: var(--text-l-size);
+  line-height: var(--text-l-line-height);
+  font-weight: var(--font-weight-medium);
+}
+
+.text-l p {
+  margin-bottom: 16px;
+}
+
+.text-l p:first-of-type {
+    text-indent: 40px;
+}
+
+.text-m {
+  font: inherit;
+  font-size: var(--text-m-size);
+  line-height: var(--text-m-line-height);
+  font-weight: var(--font-weight-medium);
+}
+
+.text-s {
+  font: inherit;
+  font-size: var(--text-s-size);
+  line-height: var(--text-s-line-height);
+  font-weight: var(--font-weight-medium);
+}
+
+/* OpenType Features */
+.aalt { font-feature-settings: "aalt" on; }
+.ccmp { font-feature-settings: "ccmp" on; }
+.locl { font-feature-settings: "locl" on; }
+.subs { font-feature-settings: "subs" on; }
+.sinf { font-feature-settings: "sinf" on; }
+.sups { font-feature-settings: "sups" on; }
+.numr { font-feature-settings: "numr" on; }
+.dnom { font-feature-settings: "dnom" on; }
+.frac { font-feature-settings: "frac" on; }
+.ordn { font-feature-settings: "ordn" on; }
+.lnum { font-feature-settings: "lnum" on; }
+.onum { font-feature-settings: "onum" on; }
+.case { font-feature-settings: "case" on; }
+.dlig { font-feature-settings: "dlig" on; }
+.liga { font-feature-settings: "liga" on; }
+.ss01 { font-feature-settings: "ss01" on; }
+.ss02 { font-feature-settings: "ss02" on; }
+.cv01 { font-feature-settings: "cv01" on; }
+.cv02 { font-feature-settings: "cv02" on; }
+
+/* Классы отступов */
+.feld-level-0 {
+    padding: 4px 8px;
+    gap: 8px;
+}
+
+.feld-level-1 {
+    padding: 4px;
+}
+
+/* Color Utility Classes */
+.b-2 { color: var(--black-2); }
+.b-4 { color: var(--black-4); }
+.b-6 { color: var(--black-6); }
+.b-8 { color: var(--black-8); }
+.b-10 { color: var(--black-10); }
+.b-12 { color: var(--black-12); }
+.b-14 { color: var(--black-14); }
+.b-16 { color: var(--black-16); }
+.b-18 { color: var(--black-18); }
+.b-20 { color: var(--black-20); }
+.b-22 { color: var(--black-22); }
+.b-24 { color: var(--black-24); }
+.b-26 { color: var(--black-26); }
+.b-28 { color: var(--black-28); }
+.b-30 { color: var(--black-30); }
+.b-32 { color: var(--black-32); }
+.b-34 { color: var(--black-34); }
+.b-36 { color: var(--black-36); }
+.b-38 { color: var(--black-38); }
+.b-40 { color: var(--black-40); }
+.b-42 { color: var(--black-42); }
+.b-44 { color: var(--black-44); }
+.b-46 { color: var(--black-46); }
+.b-48 { color: var(--black-48); }
+.b-50 { color: var(--black-50); }
+.b-52 { color: var(--black-52); }
+.b-54 { color: var(--black-54); }
+.b-56 { color: var(--black-56); }
+.b-58 { color: var(--black-58); }
+.b-60 { color: var(--black-60); }
+.b-62 { color: var(--black-62); }
+.b-64 { color: var(--black-64); }
+.b-66 { color: var(--black-66); }
+.b-68 { color: var(--black-68); }
+.b-70 { color: var(--black-70); }
+.b-72 { color: var(--black-72); }
+.b-74 { color: var(--black-74); }
+.b-76 { color: var(--black-76); }
+.b-78 { color: var(--black-78); }
+.b-80 { color: var(--black-80); }
+.b-82 { color: var(--black-82); }
+.b-84 { color: var(--black-84); }
+.b-86 { color: var(--black-86); }
+.b-88 { color: var(--black-88); }
+.b-90 { color: var(--black-90); }
+.b-92 { color: var(--black-92); }
+.b-94 { color: var(--black-94); }
+.b-96 { color: var(--black-96); }
+.b-98 { color: var(--black-98); }
+.b-100 { color: var(--black-100); }
+
+.w-2 { color: var(--white-2); }
+.w-4 { color: var(--white-4); }
+.w-6 { color: var(--white-6); }
+.w-8 { color: var(--white-8); }
+.w-10 { color: var(--white-10); }
+.w-12 { color: var(--white-12); }
+.w-14 { color: var(--white-14); }
+.w-16 { color: var(--white-16); }
+.w-18 { color: var(--white-18); }
+.w-20 { color: var(--white-20); }
+.w-22 { color: var(--white-22); }
+.w-24 { color: var(--white-24); }
+.w-26 { color: var(--white-26); }
+.w-28 { color: var(--white-28); }
+.w-30 { color: var(--white-30); }
+.w-32 { color: var(--white-32); }
+.w-34 { color: var(--white-34); }
+.w-36 { color: var(--white-36); }
+.w-38 { color: var(--white-38); }
+.w-40 { color: var(--white-40); }
+.w-42 { color: var(--white-42); }
+.w-44 { color: var(--white-44); }
+.w-46 { color: var(--white-46); }
+.w-48 { color: var(--white-48); }
+.w-50 { color: var(--white-50); }
+.w-52 { color: var(--white-52); }
+.w-54 { color: var(--white-54); }
+.w-56 { color: var(--white-56); }
+.w-58 { color: var(--white-58); }
+.w-60 { color: var(--white-60); }
+.w-62 { color: var(--white-62); }
+.w-64 { color: var(--white-64); }
+.w-66 { color: var(--white-66); }
+.w-68 { color: var(--white-68); }
+.w-70 { color: var(--white-70); }
+.w-72 { color: var(--white-72); }
+.w-74 { color: var(--white-74); }
+.w-76 { color: var(--white-76); }
+.w-78 { color: var(--white-78); }
+.w-80 { color: var(--white-80); }
+.w-82 { color: var(--white-82); }
+.w-84 { color: var(--white-84); }
+.w-86 { color: var(--white-86); }
+.w-88 { color: var(--white-88); }
+.w-90 { color: var(--white-90); }
+.w-92 { color: var(--white-92); }
+.w-94 { color: var(--white-94); }
+.w-96 { color: var(--white-96); }
+.w-98 { color: var(--white-98); }
+.w-100 { color: var(--white-100); }
+
+/* Класс no-js по умолчанию (переключается на js через JSClassProvider) */
+html.no-js {
+  color: var(--black-100);
+  scroll-padding-top: 60px;
+  scroll-padding-bottom: 60px;
+}
+
+/* Класс js (добавляется после гидратации) */
+html.js {
+  color: var(--black-100);
+  scroll-padding-top: 60px;
+  scroll-padding-bottom: 60px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+} 

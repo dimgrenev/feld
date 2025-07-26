@@ -1,0 +1,72 @@
+{
+  "name": "CardCart Preview Data",
+  "description": "Sample data for CardCart component preview",
+  "variants": [
+    {
+      "name": "Simple Cart",
+      "props": {
+        "id": "simple-cart",
+        "items": [
+          {
+            "id": "item1",
+            "title": "Product 1",
+            "price": 29.99,
+            "quantity": 2,
+            "image": "https://via.placeholder.com/60x60"
+          },
+          {
+            "id": "item2",
+            "title": "Product 2",
+            "price": 19.99,
+            "quantity": 1,
+            "image": "https://via.placeholder.com/60x60"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Compact Cart",
+      "props": {
+        "id": "compact-cart",
+        "items": [
+          {
+            "id": "item1",
+            "title": "Laptop",
+            "price": 999.99,
+            "quantity": 1
+          },
+          {
+            "id": "item2",
+            "title": "Mouse",
+            "price": 25.00,
+            "quantity": 1
+          }
+        ],
+        "variant": "compact"
+      }
+    },
+    {
+      "name": "Detailed Cart",
+      "props": {
+        "id": "detailed-cart",
+        "items": [
+          {
+            "id": "item1",
+            "title": "Premium Headphones",
+            "price": 199.99,
+            "quantity": 1,
+            "image": "https://via.placeholder.com/80x80"
+          },
+          {
+            "id": "item2",
+            "title": "Wireless Keyboard",
+            "price": 89.99,
+            "quantity": 2,
+            "image": "https://via.placeholder.com/80x80"
+          }
+        ],
+        "variant": "detailed"
+      }
+    }
+  ]
+} 

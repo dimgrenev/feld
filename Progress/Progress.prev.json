@@ -1,0 +1,55 @@
+{
+  "name": "Progress Preview Data",
+  "description": "Sample data for Progress component preview",
+  "variants": [
+    {
+      "name": "Default Progress",
+      "props": {
+        "id": "default-progress",
+        "value": 65,
+        "max": 100,
+        "showLabel": true
+      }
+    },
+    {
+      "name": "Success Progress",
+      "props": {
+        "id": "success-progress",
+        "value": 100,
+        "max": 100,
+        "variant": "success",
+        "showLabel": true
+      }
+    },
+    {
+      "name": "Warning Progress",
+      "props": {
+        "id": "warning-progress",
+        "value": 75,
+        "max": 100,
+        "variant": "warning",
+        "showLabel": true
+      }
+    },
+    {
+      "name": "Error Progress",
+      "props": {
+        "id": "error-progress",
+        "value": 25,
+        "max": 100,
+        "variant": "error",
+        "showLabel": true
+      }
+    },
+    {
+      "name": "Large Progress",
+      "props": {
+        "id": "large-progress",
+        "value": 45,
+        "max": 100,
+        "size": "large",
+        "showLabel": true
+      }
+    }
+  ]
+}

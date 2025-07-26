@@ -1,0 +1,17 @@
+{
+  "name": "Checkbox",
+  "description": "A checkbox component.",
+  "properties": [
+    {
+      "name": "id",
+      "type": "string",
+      "description": "Unique identifier"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "CSS class name"
+    }
+  ],
+  "events": []
+}

@@ -1,8 +1,0 @@
-{
-  "name": "Footer",
-  "description": "Footer component.",
-  "properties": [
-    { "name": "children", "type": "React.ReactNode", "description": "Footer content." }
-  ],
-  "events": []
-} 

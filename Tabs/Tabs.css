@@ -1,0 +1,31 @@
+.feld-tabs {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.feld-tab-list {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+}
+
+.feld-tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.feld-tab:hover {
+  background-color: #f0f0f0;
+}
+
+.feld-tab[aria-selected="true"] {
+  border-bottom-color: #007bff;
+  font-weight: bold;
+}
+
+.feld-tab-panel {
+  padding: 20px;
+} 

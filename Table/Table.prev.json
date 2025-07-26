@@ -1,0 +1,56 @@
+{
+  "name": "Table Preview Data",
+  "description": "Sample data for Table component preview",
+  "variants": [
+    {
+      "name": "Simple Table",
+      "props": {
+        "id": "simple-table",
+        "headers": [
+          { "key": "name", "label": "Name", "width": "200px" },
+          { "key": "age", "label": "Age", "align": "center" },
+          { "key": "email", "label": "Email" }
+        ],
+        "rows": [
+          { "name": "John Doe", "age": 30, "email": "john@example.com" },
+          { "name": "Jane Smith", "age": 25, "email": "jane@example.com" },
+          { "name": "Bob Johnson", "age": 35, "email": "bob@example.com" }
+        ]
+      }
+    },
+    {
+      "name": "Striped Table",
+      "props": {
+        "id": "striped-table",
+        "headers": [
+          { "key": "product", "label": "Product" },
+          { "key": "price", "label": "Price", "align": "right" },
+          { "key": "stock", "label": "Stock", "align": "center" }
+        ],
+        "rows": [
+          { "product": "Laptop", "price": "$999", "stock": 15 },
+          { "product": "Mouse", "price": "$25", "stock": 50 },
+          { "product": "Keyboard", "price": "$75", "stock": 30 }
+        ],
+        "variant": "striped"
+      }
+    },
+    {
+      "name": "Bordered Table",
+      "props": {
+        "id": "bordered-table",
+        "headers": [
+          { "key": "id", "label": "ID", "align": "center" },
+          { "key": "status", "label": "Status" },
+          { "key": "date", "label": "Date" }
+        ],
+        "rows": [
+          { "id": "001", "status": "Active", "date": "2024-01-15" },
+          { "id": "002", "status": "Pending", "date": "2024-01-16" },
+          { "id": "003", "status": "Completed", "date": "2024-01-17" }
+        ],
+        "variant": "bordered"
+      }
+    }
+  ]
+}

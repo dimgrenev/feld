@@ -1,3 +1,4 @@
+// Основные экспорты компонентов
 export * from './Button';
 export * from './Card';
 export * from './Accordion';
@@ -22,4 +23,12 @@ export * from './Table';
 export * from './Tabs';
 export * from './Text';
 export * from './Article';
-export * from './CardCart'; 
+export * from './CardCart';
+export * from './Container';
+export * from './Select';
+export * from './Textarea';
+
+// Регистрация компонентов в движке userface
+import './register';
+
+// Все компоненты уже экспортированы через export * выше 

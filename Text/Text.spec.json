@@ -1,0 +1,13 @@
+{
+  "name": "Text",
+  "description": "A text component for displaying headings, paragraphs, and other text content.",
+  "properties": [
+    { "name": "id", "type": "string", "description": "Unique identifier" },
+    { "name": "text", "type": "string", "description": "Text content to display" },
+    { "name": "variant", "type": "string", "description": "Text variant", "defaultValue": "body", "options": ["h1", "h2", "h3", "h4", "h5", "h6", "body", "caption", "label"] },
+    { "name": "color", "type": "string", "description": "Text color" },
+    { "name": "align", "type": "string", "description": "Text alignment", "options": ["left", "center", "right", "justify"] },
+    { "name": "className", "type": "string", "description": "CSS class name" }
+  ],
+  "events": []
+}

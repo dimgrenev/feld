@@ -1,8 +1,0 @@
-{
-  "name": "Feed",
-  "description": "Feed component.",
-  "properties": [
-    { "name": "items", "type": "FeedItem[]", "description": "Feed items." }
-  ],
-  "events": []
-} 

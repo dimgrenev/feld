@@ -1,0 +1,73 @@
+{
+  "name": "Filter Preview Data",
+  "description": "Sample data for Filter component preview",
+  "variants": [
+    {
+      "name": "Text Filter",
+      "props": {
+        "id": "text-filter",
+        "fields": [
+          {
+            "id": "search",
+            "label": "Search",
+            "type": "text",
+            "placeholder": "Enter search term..."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Multiple Filters",
+      "props": {
+        "id": "multiple-filters",
+        "fields": [
+          {
+            "id": "category",
+            "label": "Category",
+            "type": "select",
+            "options": [
+              { "value": "electronics", "label": "Electronics" },
+              { "value": "clothing", "label": "Clothing" },
+              { "value": "books", "label": "Books" }
+            ],
+            "placeholder": "Select category"
+          },
+          {
+            "id": "price",
+            "label": "Price Range",
+            "type": "select",
+            "options": [
+              { "value": "0-50", "label": "$0 - $50" },
+              { "value": "51-100", "label": "$51 - $100" },
+              { "value": "101+", "label": "$101+" }
+            ],
+            "placeholder": "Select price range"
+          },
+          {
+            "id": "inStock",
+            "label": "In Stock",
+            "type": "checkbox"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Compact Filters",
+      "props": {
+        "id": "compact-filters",
+        "fields": [
+          {
+            "id": "status",
+            "label": "Status",
+            "type": "radio",
+            "options": [
+              { "value": "active", "label": "Active" },
+              { "value": "inactive", "label": "Inactive" }
+            ]
+          }
+        ],
+        "variant": "compact"
+      }
+    }
+  ]
+}

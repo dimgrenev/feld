@@ -1,0 +1,125 @@
+/**
+ * Стили для Accordion компонента Feld Design System
+ * Восстановлены из feld_legacy
+ */
+
+/* --- Structure --- */
+.feld-accordion {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--black-80);
+}
+
+.feld-accordion-item {
+  border-bottom: 1px solid var(--black-80);
+}
+
+.feld-accordion-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  list-style: none; /* Remove default marker */
+  padding: 12px 8px; /* Explicit padding: 12px top/bottom, 8px left/right */
+  transition: background-color 0.2s ease;
+}
+
+.feld-accordion-summary::-webkit-details-marker {
+  display: none; /* Hide arrow in Safari */
+}
+
+.feld-accordion-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+
+/* Disable content animation for the arrow variant */
+.feld-accordion[data-variant="arrow"] .feld-accordion-content {
+  transition: none;
+}
+
+/* When the details element is open, JS will calculate and set max-height.
+   When JS is disabled, this rule provides a fallback to show the content,
+   albeit without animation. */
+details[open] > .feld-accordion-content {
+  max-height: 1000px; /* A large enough value for fallback */
+}
+
+.feld-accordion-content-inner {
+  padding-bottom: var(--space-16);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+/* --- Icon --- */
+.feld-accordion-icon {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.feld-accordion-icon::before,
+.feld-accordion-icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 1px;
+  background-color: var(--black-80);
+  transform-origin: center;
+}
+
+.feld-accordion-icon::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.feld-accordion-icon::before {
+  transform: translate(-50%, -50%);
+}
+
+details[open] > .feld-accordion-summary .feld-accordion-icon {
+  transform: rotate(45deg);
+}
+
+/* --- Arrow Variant --- */
+
+/* 1. Hide the custom '+' icon for the arrow variant */
+.feld-accordion[data-variant="arrow"] .feld-accordion-icon {
+  display: none;
+}
+
+/* 2. Adjust summary layout for the arrow variant */
+.feld-accordion[data-variant="arrow"] .feld-accordion-summary {
+  justify-content: flex-start;
+  gap: var(--space-8);
+}
+
+/* 3. Create a static CSS triangle using the ::before pseudo-element */
+.feld-accordion[data-variant="arrow"] .feld-accordion-summary::before {
+  content: '';
+  /* This ensures the pseudo-element does not take extra space */
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid var(--black-80);
+  transition: transform 0.2s ease;
+}
+
+.feld-accordion[data-variant="arrow"] details[open] > .feld-accordion-summary::before {
+  transform: rotate(90deg);
+}
+
+.feld-accordion[data-variant="arrow"] {
+  border-top: none;
+}
+
+.feld-accordion[data-variant="arrow"] .feld-accordion-item {
+  border-bottom: none;
+} 

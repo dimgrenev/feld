@@ -1,0 +1,36 @@
+{
+  "name": "Layout Preview Data",
+  "description": "Sample data for Layout component preview",
+  "variants": [
+    {
+      "name": "Default Layout",
+      "props": {
+        "id": "default-layout",
+        "header": "Header content",
+        "main": "Main content area",
+        "footer": "Footer content"
+      }
+    },
+    {
+      "name": "Sidebar Layout",
+      "props": {
+        "id": "sidebar-layout",
+        "header": "Header with navigation",
+        "main": "Main content with articles",
+        "side": "Sidebar with widgets",
+        "footer": "Footer with links",
+        "variant": "sidebar"
+      }
+    },
+    {
+      "name": "Header Footer Layout",
+      "props": {
+        "id": "header-footer-layout",
+        "header": "Application header",
+        "main": "Page content",
+        "footer": "Application footer",
+        "variant": "header-footer"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "name": "Text Preview Data",
+  "description": "Sample data for Text component preview",
+  "variants": [
+    {
+      "name": "Heading Text",
+      "props": {
+        "id": "heading-text",
+        "text": "Main Heading",
+        "variant": "heading",
+        "size": "2xl",
+        "weight": "semibold"
+      }
+    },
+    {
+      "name": "Body Text",
+      "props": {
+        "id": "body-text",
+        "text": "This is body text with some content. It demonstrates how regular paragraph text looks in the component.",
+        "variant": "body",
+        "size": "md"
+      }
+    },
+    {
+      "name": "Caption Text",
+      "props": {
+        "id": "caption-text",
+        "text": "This is a caption or small text",
+        "variant": "caption",
+        "size": "sm",
+        "color": "secondary"
+      }
+    },
+    {
+      "name": "Centered Text",
+      "props": {
+        "id": "centered-text",
+        "text": "This text is centered",
+        "variant": "body",
+        "align": "center"
+      }
+    },
+    {
+      "name": "Error Text",
+      "props": {
+        "id": "error-text",
+        "text": "This is an error message",
+        "variant": "body",
+        "color": "error",
+        "weight": "medium"
+      }
+    },
+    {
+      "name": "Truncated Text",
+      "props": {
+        "id": "truncated-text",
+        "text": "This is a very long text that will be truncated with ellipsis when it exceeds the container width",
+        "variant": "body",
+        "truncate": true
+      }
+    }
+  ]
+}

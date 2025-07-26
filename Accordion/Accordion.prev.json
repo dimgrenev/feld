@@ -1,0 +1,49 @@
+{
+  "name": "Accordion Preview Data",
+  "description": "Sample data for Accordion component preview",
+  "variants": [
+    {
+      "name": "Plus Variant Accordion",
+      "props": {
+        "id": "plus-accordion",
+        "variant": "plus",
+        "items": [
+          {
+            "summary": "Section 1",
+            "content": "This is the content of section 1. It can contain any React elements.",
+            "isOpen": true
+          },
+          {
+            "summary": "Section 2",
+            "content": "This is the content of section 2. It demonstrates how accordion works.",
+            "isOpen": false
+          },
+          {
+            "summary": "Section 3",
+            "content": "This is the content of section 3. You can add more sections as needed.",
+            "isOpen": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "Arrow Variant Accordion",
+      "props": {
+        "id": "arrow-accordion",
+        "variant": "arrow",
+        "items": [
+          {
+            "summary": "Arrow Section 1",
+            "content": "This accordion uses arrow variant with different styling.",
+            "isOpen": false
+          },
+          {
+            "summary": "Arrow Section 2",
+            "content": "Arrow variant provides instant open/close without animation.",
+            "isOpen": false
+          }
+        ]
+      }
+    }
+  ]
+}

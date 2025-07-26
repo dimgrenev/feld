@@ -1,0 +1,50 @@
+{
+  "name": "Image Preview Data",
+  "description": "Sample data for Image component preview",
+  "variants": [
+    {
+      "name": "Default Image",
+      "props": {
+        "id": "default-image",
+        "src": "https://via.placeholder.com/300x200",
+        "alt": "Placeholder image"
+      }
+    },
+    {
+      "name": "Rounded Image",
+      "props": {
+        "id": "rounded-image",
+        "src": "https://via.placeholder.com/200x200",
+        "alt": "Rounded image",
+        "variant": "rounded"
+      }
+    },
+    {
+      "name": "Circle Image",
+      "props": {
+        "id": "circle-image",
+        "src": "https://via.placeholder.com/150x150",
+        "alt": "Circle image",
+        "variant": "circle"
+      }
+    },
+    {
+      "name": "Thumbnail Image",
+      "props": {
+        "id": "thumbnail-image",
+        "src": "https://via.placeholder.com/100x100",
+        "alt": "Thumbnail image",
+        "variant": "thumbnail"
+      }
+    },
+    {
+      "name": "Lazy Loaded Image",
+      "props": {
+        "id": "lazy-image",
+        "src": "https://via.placeholder.com/400x300",
+        "alt": "Lazy loaded image",
+        "lazy": true
+      }
+    }
+  ]
+}

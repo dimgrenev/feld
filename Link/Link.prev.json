@@ -1,0 +1,41 @@
+{
+  "name": "Link Preview Data",
+  "description": "Sample data for Link component preview",
+  "variants": [
+    {
+      "name": "Default Link",
+      "props": {
+        "id": "default-link",
+        "href": "https://example.com",
+        "children": "Visit Example.com"
+      }
+    },
+    {
+      "name": "Primary Link",
+      "props": {
+        "id": "primary-link",
+        "href": "https://example.com",
+        "children": "Primary Link",
+        "variant": "primary"
+      }
+    },
+    {
+      "name": "External Link",
+      "props": {
+        "id": "external-link",
+        "href": "https://external-site.com",
+        "children": "External Link",
+        "target": "_blank"
+      }
+    },
+    {
+      "name": "Underlined Link",
+      "props": {
+        "id": "underlined-link",
+        "href": "#section",
+        "children": "Underlined Link",
+        "variant": "underline"
+      }
+    }
+  ]
+}

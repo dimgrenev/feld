@@ -1,0 +1,50 @@
+{
+  "name": "Select Preview Data",
+  "description": "Sample data for Select component preview",
+  "variants": [
+    {
+      "name": "Single Select",
+      "props": {
+        "id": "single-select",
+        "label": "Choose an option",
+        "options": [
+          { "value": "option1", "label": "Option 1" },
+          { "value": "option2", "label": "Option 2" },
+          { "value": "option3", "label": "Option 3" },
+          { "value": "option4", "label": "Option 4" }
+        ],
+        "value": "option2",
+        "placeholder": "Select an option"
+      }
+    },
+    {
+      "name": "Multiple Select",
+      "props": {
+        "id": "multiple-select",
+        "label": "Choose multiple options",
+        "options": [
+          { "value": "apple", "label": "Apple" },
+          { "value": "banana", "label": "Banana" },
+          { "value": "orange", "label": "Orange" },
+          { "value": "grape", "label": "Grape" }
+        ],
+        "values": ["apple", "orange"],
+        "multiple": true,
+        "placeholder": "Select options"
+      }
+    },
+    {
+      "name": "Disabled Select",
+      "props": {
+        "id": "disabled-select",
+        "label": "Disabled Select",
+        "options": [
+          { "value": "option1", "label": "Option 1" },
+          { "value": "option2", "label": "Option 2" }
+        ],
+        "disabled": true,
+        "placeholder": "This select is disabled"
+      }
+    }
+  ]
+} 

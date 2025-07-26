@@ -1,0 +1,220 @@
+/**
+ * Стили для Button компонента Feld Design System
+ * Восстановлены из feld_legacy
+ */
+
+.feld-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--feld-spacing-xs);
+  cursor: pointer;
+  border-radius: var(--feld-radius-sm);
+  border: none;
+  font-family: var(--feld-font-family);
+  font-weight: 500;
+  text-decoration: none;
+  transition: all var(--feld-transition-fast);
+  outline: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.feld-button:focus-visible {
+  outline: 2px solid var(--feld-color-primary);
+  outline-offset: 2px;
+}
+
+/* Размеры */
+.feld-button--small {
+  padding: var(--feld-spacing-xs) var(--feld-spacing-sm);
+  font-size: var(--feld-font-size-sm);
+  min-height: 32px;
+}
+
+.feld-button--medium {
+  padding: var(--feld-spacing-sm) var(--feld-spacing-md);
+  font-size: var(--feld-font-size-base);
+  min-height: 40px;
+}
+
+.feld-button--large {
+  padding: var(--feld-spacing-md) var(--feld-spacing-lg);
+  font-size: var(--feld-font-size-lg);
+  min-height: 48px;
+}
+
+/* Растягивание на всю ширину */
+.feld-button--stretch {
+  width: 100%;
+}
+
+/* Выравнивание текста */
+.feld-button--text-left {
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.feld-button--text-right {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.feld-button--text-center {
+  text-align: center;
+  justify-content: center;
+}
+
+/* Варианты кнопок */
+.feld-button--primary {
+  background-color: var(--feld-color-primary);
+  color: var(--feld-color-primary-contrast);
+}
+
+.feld-button--primary:hover:not(:disabled) {
+  background-color: var(--feld-color-primary-hover);
+}
+
+.feld-button--primary:active:not(:disabled) {
+  background-color: var(--feld-color-primary-active);
+}
+
+.feld-button--secondary {
+  background-color: var(--feld-color-secondary);
+  color: var(--feld-color-secondary-contrast);
+}
+
+.feld-button--secondary:hover:not(:disabled) {
+  background-color: var(--feld-color-secondary-hover);
+}
+
+.feld-button--accent {
+  background-color: #000000;
+  color: white;
+}
+
+.feld-button--accent:hover:not(:disabled) {
+  background-color: var(--black-72, #333333);
+  color: var(--white-100, #ffffff);
+}
+
+.feld-button--round {
+  background-color: transparent;
+  color: var(--black-56, #666666);
+  border-radius: 12px;
+  outline: 1px solid var(--black-56, #666666);
+  outline-offset: -1px;
+}
+
+.feld-button--round:hover:not(:disabled) {
+  background-color: var(--black-4, #f5f5f5);
+  color: var(--black-80, #333333);
+}
+
+.feld-button--default {
+  background-color: transparent;
+  color: var(--black-56, #666666);
+}
+
+.feld-button--default:hover:not(:disabled) {
+  background-color: var(--black-4, #f5f5f5);
+  color: var(--black-80, #333333);
+}
+
+.feld-button--outlined {
+  background-color: transparent;
+  color: var(--feld-color-primary);
+  border: 1px solid var(--feld-color-primary);
+}
+
+.feld-button--outlined:hover:not(:disabled) {
+  background-color: var(--feld-color-primary);
+  color: var(--feld-color-primary-contrast);
+}
+
+.feld-button--ghost {
+  background-color: transparent;
+  color: var(--feld-color-primary);
+}
+
+.feld-button--ghost:hover:not(:disabled) {
+  background-color: var(--feld-color-primary-light);
+}
+
+.feld-button--delete {
+  background-color: transparent;
+  color: var(--black-56, #666666);
+}
+
+.feld-button--delete:hover:not(:disabled) {
+  background-color: #dc354612;
+  color: #dc3546;
+}
+
+/* Состояния */
+.feld-button:disabled,
+.feld-button--disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.feld-button--loading {
+  cursor: wait;
+}
+
+.feld-button--loading .feld-button__text {
+  opacity: 0.7;
+}
+
+/* Элементы кнопки */
+.feld-button__spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.feld-button__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.feld-button__icon--left {
+  margin-right: var(--feld-spacing-xs);
+}
+
+.feld-button__icon--right {
+  margin-left: var(--feld-spacing-xs);
+}
+
+.feld-button__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Спиннер */
+.feld-spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  animation: feld-spin 1s linear infinite;
+}
+
+.feld-spinner--small {
+  width: 12px;
+  height: 12px;
+  border-width: 1px;
+}
+
+@keyframes feld-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} 

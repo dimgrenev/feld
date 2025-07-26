@@ -1,0 +1,96 @@
+/**
+ * Стили для Card компонента Feld Design System
+ * Восстановлены из feld_legacy
+ */
+
+.feld-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--space-4);
+  overflow: hidden;
+  height: 100%;
+  gap: var(--space-2);
+  background-color: var(--white-100);
+  transition: all var(--feld-transition-fast);
+}
+
+.feld-card--elevated {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feld-card--clickable {
+  cursor: pointer;
+}
+
+.feld-card--clickable:hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+
+.feld-card--clickable:active {
+  transform: translateY(0);
+}
+
+.feld-card__media {
+  width: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.feld-card__media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.feld-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  flex-grow: 1;
+  padding: var(--space-16);
+}
+
+.feld-card__header {
+  flex-shrink: 0;
+}
+
+.feld-card__header h1,
+.feld-card__header h2,
+.feld-card__header h3,
+.feld-card__header h4,
+.feld-card__header h5,
+.feld-card__header h6 {
+  margin: 0;
+  font-weight: var(--font-weight-semibold);
+  color: var(--black-80);
+}
+
+.feld-card__content-body {
+  flex-grow: 1;
+  color: var(--black-80);
+}
+
+.feld-card__content-body > div:not(:last-child) {
+  margin-bottom: var(--space-8);
+}
+
+.feld-card__footer {
+  flex-shrink: 0;
+  margin-top: auto;
+  padding-top: var(--space-8);
+  border-top: 1px solid var(--black-4);
+}
+
+.feld-card-title {
+  margin: 0;
+  font-size: var(--h2-size);
+  font-weight: var(--font-weight-semibold);
+  color: var(--black-80);
+}
+
+.feld-card-content {
+  color: var(--black-80);
+  line-height: 1.5;
+} 

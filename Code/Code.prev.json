@@ -1,0 +1,43 @@
+{
+  "name": "Code Preview Data",
+  "description": "Sample data for Code component preview",
+  "variants": [
+    {
+      "name": "JavaScript Code",
+      "props": {
+        "id": "js-code",
+        "code": "function hello() {\n  console.log('Hello, World!');\n}",
+        "language": "javascript",
+        "theme": "light"
+      }
+    },
+    {
+      "name": "CSS Code",
+      "props": {
+        "id": "css-code",
+        "code": ".button {\n  background: #007bff;\n  color: white;\n  padding: 10px 20px;\n}",
+        "language": "css",
+        "theme": "dark"
+      }
+    },
+    {
+      "name": "HTML Code",
+      "props": {
+        "id": "html-code",
+        "code": "<div class=\"container\">\n  <h1>Hello World</h1>\n  <p>Welcome to our app!</p>\n</div>",
+        "language": "html",
+        "theme": "light",
+        "showLineNumbers": true
+      }
+    },
+    {
+      "name": "Plain Text",
+      "props": {
+        "id": "plain-text",
+        "code": "This is plain text content\nthat can be displayed\nin a code block.",
+        "language": "text",
+        "theme": "light"
+      }
+    }
+  ]
+}

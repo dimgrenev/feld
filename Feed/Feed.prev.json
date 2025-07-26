@@ -1,0 +1,68 @@
+{
+  "name": "Feed Preview Data",
+  "description": "Sample data for Feed component preview",
+  "variants": [
+    {
+      "name": "Default Feed",
+      "props": {
+        "id": "default-feed",
+        "items": [
+          {
+            "id": "post1",
+            "title": "First Post",
+            "content": "This is the content of the first post.",
+            "author": "John Doe",
+            "timestamp": "2024-01-15 10:30",
+            "avatar": "https://via.placeholder.com/40x40"
+          },
+          {
+            "id": "post2",
+            "title": "Second Post",
+            "content": "Another interesting post content.",
+            "author": "Jane Smith",
+            "timestamp": "2024-01-15 11:45",
+            "avatar": "https://via.placeholder.com/40x40"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Timeline Feed",
+      "props": {
+        "id": "timeline-feed",
+        "items": [
+          {
+            "id": "event1",
+            "title": "Project Started",
+            "content": "New project has been initiated",
+            "timestamp": "2024-01-15 09:00"
+          },
+          {
+            "id": "event2",
+            "title": "Milestone Reached",
+            "content": "First milestone completed successfully",
+            "timestamp": "2024-01-15 14:30"
+          }
+        ],
+        "variant": "timeline"
+      }
+    },
+    {
+      "name": "Card Feed",
+      "props": {
+        "id": "card-feed",
+        "items": [
+          {
+            "id": "card1",
+            "title": "Featured Article",
+            "content": "This is a featured article with more detailed content.",
+            "author": "Editor",
+            "timestamp": "2024-01-15 16:00",
+            "avatar": "https://via.placeholder.com/50x50"
+          }
+        ],
+        "variant": "card"
+      }
+    }
+  ]
+}

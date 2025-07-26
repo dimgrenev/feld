@@ -1,0 +1,37 @@
+{
+  "name": "Panel Preview Data",
+  "description": "Sample data for Panel component preview",
+  "variants": [
+    {
+      "name": "Default Panel",
+      "props": {
+        "id": "default-panel",
+        "children": "This is a default panel with some content inside."
+      }
+    },
+    {
+      "name": "Elevated Panel",
+      "props": {
+        "id": "elevated-panel",
+        "variant": "elevated",
+        "children": "This panel has an elevated appearance with shadow."
+      }
+    },
+    {
+      "name": "Outlined Panel",
+      "props": {
+        "id": "outlined-panel",
+        "variant": "outlined",
+        "children": "This panel has an outlined border style."
+      }
+    },
+    {
+      "name": "Large Panel",
+      "props": {
+        "id": "large-panel",
+        "size": "large",
+        "children": "This is a large panel with more padding and spacing."
+      }
+    }
+  ]
+}

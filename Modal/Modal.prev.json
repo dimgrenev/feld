@@ -1,0 +1,45 @@
+{
+  "name": "Modal Preview Data",
+  "description": "Sample data for Modal component preview",
+  "variants": [
+    {
+      "name": "Simple Modal",
+      "props": {
+        "id": "simple-modal",
+        "isOpen": true,
+        "title": "Simple Modal",
+        "children": "This is a simple modal with basic content."
+      }
+    },
+    {
+      "name": "Large Modal",
+      "props": {
+        "id": "large-modal",
+        "isOpen": true,
+        "title": "Large Modal",
+        "children": "This modal uses the large size variant.",
+        "size": "large"
+      }
+    },
+    {
+      "name": "Centered Modal",
+      "props": {
+        "id": "centered-modal",
+        "isOpen": true,
+        "title": "Centered Modal",
+        "children": "This modal is centered on the screen.",
+        "variant": "centered"
+      }
+    },
+    {
+      "name": "Side Modal",
+      "props": {
+        "id": "side-modal",
+        "isOpen": true,
+        "title": "Side Modal",
+        "children": "This modal slides in from the side.",
+        "variant": "side"
+      }
+    }
+  ]
+}

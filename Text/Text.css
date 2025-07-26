@@ -1,0 +1,74 @@
+/**
+ * Стили для Text компонента Feld Design System
+ */
+
+.feld-text {
+  margin: 0;
+  font-family: var(--font-family);
+  line-height: 1.4;
+}
+
+/* Варианты */
+.feld-text--body {
+  font-size: var(--text-m-size);
+  line-height: var(--text-m-line-height);
+}
+
+.feld-text--heading {
+  font-size: var(--h2-size);
+  line-height: var(--h2-line-height);
+  font-weight: var(--font-weight-semibold);
+}
+
+.feld-text--subheading {
+  font-size: var(--h3-size);
+  line-height: var(--h3-line-height);
+  font-weight: var(--font-weight-semibold);
+}
+
+.feld-text--caption {
+  font-size: var(--text-s-size);
+  line-height: var(--text-s-line-height);
+}
+
+.feld-text--label {
+  font-size: var(--text-s-size);
+  line-height: var(--text-s-line-height);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Размеры */
+.feld-text--xs { font-size: 10px; }
+.feld-text--sm { font-size: 12px; }
+.feld-text--md { font-size: 14px; }
+.feld-text--lg { font-size: 16px; }
+.feld-text--xl { font-size: 18px; }
+.feld-text--2xl { font-size: 20px; }
+.feld-text--3xl { font-size: 24px; }
+
+/* Веса */
+.feld-text--normal { font-weight: 400; }
+.feld-text--medium { font-weight: var(--font-weight-medium); }
+.feld-text--semibold { font-weight: var(--font-weight-semibold); }
+.feld-text--bold { font-weight: 700; }
+
+/* Цвета */
+.feld-text--primary { color: var(--black-100); }
+.feld-text--secondary { color: var(--black-56); }
+.feld-text--accent { color: var(--black-80); }
+.feld-text--success { color: #28a745; }
+.feld-text--warning { color: #ffc107; }
+.feld-text--error { color: #dc3546; }
+
+/* Выравнивание */
+.feld-text--align-left { text-align: left; }
+.feld-text--align-center { text-align: center; }
+.feld-text--align-right { text-align: right; }
+.feld-text--align-justify { text-align: justify; }
+
+/* Обрезка */
+.feld-text--truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+} 

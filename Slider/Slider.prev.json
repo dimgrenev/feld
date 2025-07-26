@@ -1,0 +1,46 @@
+{
+  "name": "Slider Preview Data",
+  "description": "Sample data for Slider component preview",
+  "variants": [
+    {
+      "name": "Default Slider",
+      "props": {
+        "id": "default-slider",
+        "min": 0,
+        "max": 100,
+        "value": 50,
+        "step": 1
+      }
+    },
+    {
+      "name": "Range Slider",
+      "props": {
+        "id": "range-slider",
+        "min": 0,
+        "max": 1000,
+        "value": 250,
+        "step": 10
+      }
+    },
+    {
+      "name": "Disabled Slider",
+      "props": {
+        "id": "disabled-slider",
+        "min": 0,
+        "max": 100,
+        "value": 75,
+        "disabled": true
+      }
+    },
+    {
+      "name": "Small Step Slider",
+      "props": {
+        "id": "small-step-slider",
+        "min": 0,
+        "max": 1,
+        "value": 0.5,
+        "step": 0.1
+      }
+    }
+  ]
+}

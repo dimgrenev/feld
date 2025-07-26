@@ -1,0 +1,55 @@
+{
+  "name": "List Preview Data",
+  "description": "Sample data for List component preview",
+  "variants": [
+    {
+      "name": "Unordered List",
+      "props": {
+        "id": "unordered-list",
+        "items": [
+          { "id": "item1", "content": "First item" },
+          { "id": "item2", "content": "Second item" },
+          { "id": "item3", "content": "Third item" }
+        ],
+        "variant": "unordered"
+      }
+    },
+    {
+      "name": "Ordered List",
+      "props": {
+        "id": "ordered-list",
+        "items": [
+          { "id": "step1", "content": "First step" },
+          { "id": "step2", "content": "Second step" },
+          { "id": "step3", "content": "Third step" }
+        ],
+        "variant": "ordered"
+      }
+    },
+    {
+      "name": "List with Disabled Items",
+      "props": {
+        "id": "list-disabled",
+        "items": [
+          { "id": "item1", "content": "Available item" },
+          { "id": "item2", "content": "Disabled item", "disabled": true },
+          { "id": "item3", "content": "Another available item" }
+        ],
+        "variant": "unordered"
+      }
+    },
+    {
+      "name": "Large List",
+      "props": {
+        "id": "large-list",
+        "items": [
+          { "id": "item1", "content": "Large item 1" },
+          { "id": "item2", "content": "Large item 2" },
+          { "id": "item3", "content": "Large item 3" }
+        ],
+        "variant": "unordered",
+        "size": "large"
+      }
+    }
+  ]
+}

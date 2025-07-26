@@ -1,8 +1,0 @@
-{
-  "name": "Text",
-  "description": "Text component.",
-  "properties": [
-    { "name": "children", "type": "React.ReactNode", "description": "Text content." }
-  ],
-  "events": []
-} 

@@ -1,0 +1,29 @@
+{
+  "name": "Footer Preview Data",
+  "description": "Sample data for Footer component preview",
+  "variants": [
+    {
+      "name": "Default Footer",
+      "props": {
+        "id": "default-footer",
+        "children": "© 2024 Company Name. All rights reserved."
+      }
+    },
+    {
+      "name": "Minimal Footer",
+      "props": {
+        "id": "minimal-footer",
+        "children": "Simple footer content",
+        "variant": "minimal"
+      }
+    },
+    {
+      "name": "Full Footer",
+      "props": {
+        "id": "full-footer",
+        "children": "Full footer with links, social media, and company info",
+        "variant": "full"
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+/**
+ * Стили для Container компонента Feld Design System
+ */
+
+.feld-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  width: 100%;
+} 

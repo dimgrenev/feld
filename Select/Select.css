@@ -1,0 +1,105 @@
+/**
+ * Стили для Select компонента Feld Design System
+ */
+
+.feld-select {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.feld-select-label {
+  font-size: var(--text-s-size);
+  color: var(--black-80);
+  font-weight: var(--font-weight-medium);
+}
+
+.feld-select-wrapper {
+  position: relative;
+}
+
+.feld-select-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-8) var(--space-12);
+  border: none;
+  border-radius: var(--space-4);
+  background-color: transparent;
+  cursor: pointer;
+  font-size: var(--text-m-size);
+  transition: background-color var(--feld-transition-fast);
+}
+
+.feld-select-trigger:hover:not(:disabled) {
+  background-color: var(--black-4);
+}
+
+.feld-select-trigger:focus {
+  outline: none;
+  background-color: var(--black-4);
+}
+
+.feld-select-trigger:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.feld-select-value {
+  flex: 1;
+  text-align: left;
+  color: var(--black-80);
+}
+
+.feld-select-arrow {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid var(--black-56);
+  transition: transform var(--feld-transition-fast);
+}
+
+.feld-select-wrapper:has(.feld-select-dropdown) .feld-select-arrow {
+  transform: rotate(180deg);
+}
+
+.feld-select-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--white-100);
+  border: 1px solid var(--black-12);
+  border-radius: var(--space-4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.feld-select-option {
+  width: 100%;
+  padding: var(--space-8) var(--space-12);
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: var(--text-m-size);
+  transition: background-color var(--feld-transition-fast);
+}
+
+.feld-select-option:hover:not(:disabled) {
+  background-color: var(--black-4);
+}
+
+.feld-select-option--selected {
+  background-color: var(--black-8);
+  font-weight: var(--font-weight-medium);
+}
+
+.feld-select-option:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+} 

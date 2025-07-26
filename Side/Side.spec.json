@@ -1,0 +1,17 @@
+{
+  "name": "Side",
+  "description": "A side component.",
+  "properties": [
+    {
+      "name": "id",
+      "type": "string",
+      "description": "Unique identifier"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "CSS class name"
+    }
+  ],
+  "events": []
+}

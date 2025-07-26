@@ -1,9 +1,0 @@
-{
-  "name": "Table",
-  "description": "Table component.",
-  "properties": [
-    { "name": "columns", "type": "string[]", "description": "Table columns." },
-    { "name": "data", "type": "any[]", "description": "Table data." }
-  ],
-  "events": []
-} 

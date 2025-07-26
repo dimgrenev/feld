@@ -1,9 +1,0 @@
-{
-  "name": "Article",
-  "description": "Article component.",
-  "properties": [
-    { "name": "title", "type": "string", "description": "Article title." },
-    { "name": "content", "type": "string", "description": "Article content." }
-  ],
-  "events": []
-} 

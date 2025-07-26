@@ -1,0 +1,15 @@
+.feld-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.feld-feed-item {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1.5rem;
+}
+
+.feld-feed-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}

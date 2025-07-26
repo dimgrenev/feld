@@ -1,0 +1,20 @@
+{
+  "name": "Form Preview Data",
+  "description": "Sample data for Form component preview",
+  "variants": [
+    {
+      "name": "Simple Form",
+      "props": {
+        "id": "simple-form",
+        "children": "Form content goes here"
+      }
+    },
+    {
+      "name": "Form with Submit",
+      "props": {
+        "id": "form-with-submit",
+        "children": "This form has submit functionality"
+      }
+    }
+  ]
+}

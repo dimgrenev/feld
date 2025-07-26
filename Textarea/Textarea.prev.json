@@ -1,0 +1,33 @@
+{
+  "name": "Textarea Preview Data",
+  "description": "Sample data for Textarea component preview",
+  "variants": [
+    {
+      "name": "Simple Textarea",
+      "props": {
+        "id": "simple-textarea",
+        "label": "Description",
+        "placeholder": "Enter your description here...",
+        "value": "This is a sample textarea with some content to demonstrate the auto-resize functionality."
+      }
+    },
+    {
+      "name": "Horizontal Flow Textarea",
+      "props": {
+        "id": "horizontal-textarea",
+        "label": "Comments",
+        "placeholder": "Add your comments...",
+        "flow": "horizontal",
+        "value": "This textarea uses horizontal flow layout."
+      }
+    },
+    {
+      "name": "Empty Textarea",
+      "props": {
+        "id": "empty-textarea",
+        "label": "Notes",
+        "placeholder": "Write your notes here..."
+      }
+    }
+  ]
+} 

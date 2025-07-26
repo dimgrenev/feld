@@ -1,0 +1,78 @@
+{
+  "name": "Button Preview Data",
+  "description": "Sample data for Button component preview",
+  "variants": [
+    {
+      "name": "Primary Button",
+      "props": {
+        "id": "primary-btn",
+        "text": "Primary Button",
+        "variant": "primary",
+        "size": "medium"
+      }
+    },
+    {
+      "name": "Secondary Button", 
+      "props": {
+        "id": "secondary-btn",
+        "text": "Secondary Button",
+        "variant": "secondary",
+        "size": "medium"
+      }
+    },
+    {
+      "name": "Small Accent Button",
+      "props": {
+        "id": "small-accent-btn",
+        "text": "Small",
+        "variant": "accent",
+        "size": "small"
+      }
+    },
+    {
+      "name": "Large Outlined Button",
+      "props": {
+        "id": "large-outlined-btn",
+        "text": "Large Outlined",
+        "variant": "outlined",
+        "size": "large"
+      }
+    },
+    {
+      "name": "Loading Button",
+      "props": {
+        "id": "loading-btn",
+        "text": "Loading...",
+        "variant": "primary",
+        "loading": true
+      }
+    },
+    {
+      "name": "Disabled Button",
+      "props": {
+        "id": "disabled-btn",
+        "text": "Disabled",
+        "variant": "primary",
+        "disabled": true
+      }
+    },
+    {
+      "name": "Full Width Button",
+      "props": {
+        "id": "full-width-btn",
+        "text": "Full Width Button",
+        "variant": "primary",
+        "fullWidth": true
+      }
+    },
+    {
+      "name": "Round Button",
+      "props": {
+        "id": "round-btn",
+        "text": "Round",
+        "variant": "round",
+        "size": "medium"
+      }
+    }
+  ]
+} 

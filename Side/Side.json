@@ -1,8 +1,0 @@
-{
-  "name": "Side",
-  "description": "Side panel component.",
-  "properties": [
-    { "name": "children", "type": "React.ReactNode", "description": "Panel content." }
-  ],
-  "events": []
-} 

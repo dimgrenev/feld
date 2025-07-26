@@ -1,0 +1,20 @@
+{
+  "name": "Button",
+  "description": "A versatile button component with multiple variants, sizes, and states.",
+  "properties": [
+    { "name": "id", "type": "string", "description": "Unique identifier for the button" },
+    { "name": "text", "type": "string", "description": "The text to display on the button", "required": true },
+    { "name": "variant", "type": "string", "description": "The visual style variant", "defaultValue": "primary", "options": ["primary", "secondary", "accent", "danger", "ghost", "default", "outlined", "round"] },
+    { "name": "size", "type": "string", "description": "The size of the button", "defaultValue": "medium", "options": ["small", "medium", "large"] },
+    { "name": "fullWidth", "type": "boolean", "description": "Whether the button should stretch to full width", "defaultValue": false },
+    { "name": "textAlign", "type": "string", "description": "Text alignment within the button", "defaultValue": "center", "options": ["left", "center", "right"] },
+    { "name": "disabled", "type": "boolean", "description": "Whether the button is disabled", "defaultValue": false },
+    { "name": "loading", "type": "boolean", "description": "Whether the button is in loading state", "defaultValue": false },
+    { "name": "icon", "type": "ReactNode", "description": "Icon to display alongside text" },
+    { "name": "iconPosition", "type": "string", "description": "Position of the icon relative to text", "defaultValue": "left", "options": ["left", "right"] },
+    { "name": "className", "type": "string", "description": "Additional CSS class names" }
+  ],
+  "events": [
+    { "name": "onClick", "description": "Event fired when the button is clicked" }
+  ]
+} 

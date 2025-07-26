@@ -1,0 +1,44 @@
+{
+  "name": "Article Preview Data",
+  "description": "Sample data for Article component preview",
+  "variants": [
+    {
+      "name": "Simple Article",
+      "props": {
+        "id": "simple-article",
+        "title": "Sample Article Title",
+        "content": "This is the content of the article. It can contain any text or HTML content."
+      }
+    },
+    {
+      "name": "Article with Meta",
+      "props": {
+        "id": "article-with-meta",
+        "title": "Article with Author and Date",
+        "content": "This article includes author information and publication date.",
+        "author": "John Doe",
+        "date": "January 15, 2024"
+      }
+    },
+    {
+      "name": "Card Article",
+      "props": {
+        "id": "card-article",
+        "title": "Card Style Article",
+        "content": "This article uses the card variant for a different appearance.",
+        "author": "Jane Smith",
+        "date": "January 16, 2024",
+        "variant": "card"
+      }
+    },
+    {
+      "name": "Minimal Article",
+      "props": {
+        "id": "minimal-article",
+        "title": "Minimal Article",
+        "content": "A minimal article with clean styling.",
+        "variant": "minimal"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+.feld-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feld-checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: #007bff;
+}
+
+.feld-checkbox-label {
+  font-size: 15px;
+  color: #222;
+} 

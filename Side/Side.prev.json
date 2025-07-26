@@ -1,0 +1,33 @@
+{
+  "name": "Side Preview Data",
+  "description": "Sample data for Side component preview",
+  "variants": [
+    {
+      "name": "Left Sidebar",
+      "props": {
+        "id": "left-sidebar",
+        "children": "Left sidebar content with navigation",
+        "position": "left",
+        "width": "250px"
+      }
+    },
+    {
+      "name": "Right Sidebar",
+      "props": {
+        "id": "right-sidebar",
+        "children": "Right sidebar content with widgets",
+        "position": "right",
+        "width": "300px"
+      }
+    },
+    {
+      "name": "Narrow Sidebar",
+      "props": {
+        "id": "narrow-sidebar",
+        "children": "Narrow sidebar for icons only",
+        "position": "left",
+        "width": "60px"
+      }
+    }
+  ]
+}

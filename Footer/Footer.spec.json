@@ -1,0 +1,17 @@
+{
+  "name": "Footer",
+  "description": "A footer component.",
+  "properties": [
+    {
+      "name": "id",
+      "type": "string",
+      "description": "Unique identifier"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "CSS class name"
+    }
+  ],
+  "events": []
+}

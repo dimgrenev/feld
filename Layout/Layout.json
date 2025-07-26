@@ -1,8 +1,0 @@
-{
-  "name": "Layout",
-  "description": "Layout component.",
-  "properties": [
-    { "name": "children", "type": "React.ReactNode", "description": "Layout content." }
-  ],
-  "events": []
-} 

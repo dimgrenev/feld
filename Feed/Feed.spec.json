@@ -1,0 +1,17 @@
+{
+  "name": "Feed",
+  "description": "A feed component.",
+  "properties": [
+    {
+      "name": "id",
+      "type": "string",
+      "description": "Unique identifier"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "CSS class name"
+    }
+  ],
+  "events": []
+}

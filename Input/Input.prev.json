@@ -1,0 +1,53 @@
+{
+  "name": "Input Preview Data",
+  "description": "Sample data for Input component preview",
+  "variants": [
+    {
+      "name": "Text Input",
+      "props": {
+        "id": "text-input",
+        "type": "text",
+        "placeholder": "Enter your name...",
+        "value": ""
+      }
+    },
+    {
+      "name": "Email Input",
+      "props": {
+        "id": "email-input",
+        "type": "email",
+        "placeholder": "Enter your email...",
+        "value": "",
+        "required": true
+      }
+    },
+    {
+      "name": "Password Input",
+      "props": {
+        "id": "password-input",
+        "type": "password",
+        "placeholder": "Enter your password...",
+        "value": ""
+      }
+    },
+    {
+      "name": "Number Input",
+      "props": {
+        "id": "number-input",
+        "type": "number",
+        "placeholder": "Enter age...",
+        "value": ""
+      }
+    },
+    {
+      "name": "Disabled Input",
+      "props": {
+        "id": "disabled-input",
+        "type": "text",
+        "placeholder": "This input is disabled",
+        "value": "Disabled value",
+        "disabled": true
+      }
+    }
+  ]
+}

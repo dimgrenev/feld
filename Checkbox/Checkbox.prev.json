@@ -1,0 +1,40 @@
+{
+  "name": "Checkbox Preview Data",
+  "description": "Sample data for Checkbox component preview",
+  "variants": [
+    {
+      "name": "Simple Checkbox",
+      "props": {
+        "id": "simple-checkbox",
+        "label": "Accept terms and conditions",
+        "checked": false
+      }
+    },
+    {
+      "name": "Checked Checkbox",
+      "props": {
+        "id": "checked-checkbox",
+        "label": "Subscribe to newsletter",
+        "checked": true
+      }
+    },
+    {
+      "name": "Disabled Checkbox",
+      "props": {
+        "id": "disabled-checkbox",
+        "label": "This option is disabled",
+        "checked": false,
+        "disabled": true
+      }
+    },
+    {
+      "name": "Required Checkbox",
+      "props": {
+        "id": "required-checkbox",
+        "label": "I agree to the terms",
+        "checked": false,
+        "required": true
+      }
+    }
+  ]
+}

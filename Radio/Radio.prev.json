@@ -1,0 +1,45 @@
+{
+  "name": "Radio Preview Data",
+  "description": "Sample data for Radio component preview",
+  "variants": [
+    {
+      "name": "Simple Radio Group",
+      "props": {
+        "id": "simple-radio",
+        "name": "gender",
+        "options": [
+          { "value": "male", "label": "Male" },
+          { "value": "female", "label": "Female" },
+          { "value": "other", "label": "Other" }
+        ],
+        "value": "male"
+      }
+    },
+    {
+      "name": "Radio with Disabled Option",
+      "props": {
+        "id": "radio-disabled",
+        "name": "status",
+        "options": [
+          { "value": "active", "label": "Active" },
+          { "value": "inactive", "label": "Inactive", "disabled": true },
+          { "value": "pending", "label": "Pending" }
+        ],
+        "value": "active"
+      }
+    },
+    {
+      "name": "Disabled Radio Group",
+      "props": {
+        "id": "radio-group-disabled",
+        "name": "disabled-group",
+        "options": [
+          { "value": "option1", "label": "Option 1" },
+          { "value": "option2", "label": "Option 2" }
+        ],
+        "value": "option1",
+        "disabled": true
+      }
+    }
+  ]
+}

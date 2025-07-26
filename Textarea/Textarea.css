@@ -1,0 +1,65 @@
+/**
+ * Стили для Textarea компонента Feld Design System
+ */
+
+.feld-textarea-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  cursor: pointer;
+}
+
+.feld-textarea-wrapper.flow-horizontal {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--space-8);
+}
+
+.feld-textarea-wrapper.flow-horizontal .feld-label {
+  flex-basis: 120px;
+  flex-shrink: 0;
+  font-size: var(--text-m-size);
+  line-height: var(--text-m-line-height);
+}
+
+.feld-textarea-wrapper .feld-label {
+  font-size: var(--text-s-size);
+  line-height: var(--text-s-line-height);
+  color: var(--black-80);
+  padding: 4px 8px;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.feld-textarea {
+  width: 100%;
+  font-size: var(--text-m-size);
+  border: none;
+  border-radius: var(--space-4);
+  box-sizing: border-box;
+  background: transparent;
+  padding: var(--space-4) var(--space-8);
+  transition: all var(--feld-transition-fast);
+  resize: vertical;
+  min-height: 80px;
+  font-family: inherit;
+}
+
+.feld-textarea:hover {
+  background-color: var(--black-4);
+  color: var(--black-80);
+}
+
+.feld-textarea:focus {
+  outline: none;
+  background-color: var(--black-4);
+  color: var(--black-80);
+}
+
+.feld-textarea:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: var(--black-2);
+} 

@@ -1,0 +1,40 @@
+{
+  "name": "Card Preview Data",
+  "description": "Sample data for Card component preview",
+  "variants": [
+    {
+      "name": "Simple Card",
+      "props": {
+        "variant": "default",
+        "header": "Welcome to our platform",
+        "content": "This is a simple card with header and content sections. It demonstrates the basic card layout.",
+        "footer": "Last updated: 2024-01-15"
+      }
+    },
+    {
+      "name": "Card with Media",
+      "props": {
+        "variant": "elevated",
+        "media": "https://via.placeholder.com/400x250/4A90E2/FFFFFF?text=Card+Image",
+        "header": "Featured Product",
+        "content": "This card showcases a product with an image. The elevated variant adds a subtle shadow for depth.",
+        "footer": "Price: $99.99"
+      }
+    },
+    {
+      "name": "Content Only Card",
+      "props": {
+        "variant": "default",
+        "content": "This card only has content, no header or footer. It's perfect for simple text displays or when you want a minimal design."
+      }
+    },
+    {
+      "name": "Header Only Card",
+      "props": {
+        "variant": "default",
+        "header": "Important Notice",
+        "content": "This card has both header and content but no footer. It's useful for announcements or notifications."
+      }
+    }
+  ]
+} 

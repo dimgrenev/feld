@@ -1,0 +1,26 @@
+.feld-footer {
+  background-color: #f8f9fa;
+  padding: 2rem 1rem;
+  border-top: 1px solid #e9ecef;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feld-footer-section {
+  margin: 1rem;
+}
+
+.feld-footer-section h4 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.feld-footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.feld-footer-section ul li {
+  margin-bottom: 0.5rem;
+}

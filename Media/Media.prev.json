@@ -1,0 +1,45 @@
+{
+  "name": "Media Preview Data",
+  "description": "Sample data for Media component preview",
+  "variants": [
+    {
+      "name": "Image Media",
+      "props": {
+        "id": "image-media",
+        "src": "https://via.placeholder.com/400x300",
+        "type": "image",
+        "alt": "Sample image"
+      }
+    },
+    {
+      "name": "Video Media",
+      "props": {
+        "id": "video-media",
+        "src": "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4",
+        "type": "video",
+        "controls": true,
+        "poster": "https://via.placeholder.com/400x300"
+      }
+    },
+    {
+      "name": "Audio Media",
+      "props": {
+        "id": "audio-media",
+        "src": "https://sample-videos.com/zip/10/mp3/SampleAudio_0.4mb.mp3",
+        "type": "audio",
+        "controls": true
+      }
+    },
+    {
+      "name": "Autoplay Video",
+      "props": {
+        "id": "autoplay-video",
+        "src": "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4",
+        "type": "video",
+        "autoplay": true,
+        "muted": true,
+        "loop": true
+      }
+    }
+  ]
+}
