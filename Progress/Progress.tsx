@@ -3,20 +3,18 @@ import './Progress.css';
 
 export interface ProgressProps {
   id?: string;
-  value?: number;
+  value: number;
   max?: number;
   variant?: 'default' | 'success' | 'warning' | 'error';
-  size?: 'small' | 'medium' | 'large';
   showLabel?: boolean;
   className?: string;
 }
 
 export const Progress: React.FC<ProgressProps> = ({ 
   id,
-  value = 0, 
+  value,
   max = 100,
   variant = 'default',
-  size = 'medium',
   showLabel = false,
   className,
   ...rest 
@@ -26,16 +24,13 @@ export const Progress: React.FC<ProgressProps> = ({
   const progressClasses = [
     'feld-progress',
     `feld-progress--${variant}`,
-    `feld-progress--${size}`,
     className
   ].filter(Boolean).join(' ');
 
   return (
     <div 
       className={progressClasses}
-      data-testid={id}
-      data-feld-id={id}
-      data-feld-type="progress"
+      id={id}
       {...rest}
     >
       <div className="feld-progress-bar">

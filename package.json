@@ -1,0 +1,30 @@
+{
+  "name": "feld",
+  "version": "1.0.0",
+  "description": "Feld Design System - Universal Component Library",
+  "main": "index.ts",
+  "types": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "userface": "^1.0.8"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0"
+  },
+  "keywords": [
+    "design-system",
+    "components",
+    "react",
+    "universal",
+    "userface"
+  ],
+  "author": "Dima Grenev",
+  "license": "MIT"
+}

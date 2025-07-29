@@ -29,9 +29,9 @@ export const Code: React.FC<CodeProps> = ({
   return (
     <pre 
       className={codeClasses}
-      data-testid={id}
-      data-feld-id={id}
-      data-feld-type="code"
+      
+      
+      
       data-language={language}
       {...rest}
     >

@@ -24,9 +24,9 @@ export const Footer: React.FC<FooterProps> = ({
   return (
     <footer 
       className={footerClasses}
-      data-testid={id}
-      data-feld-id={id}
-      data-feld-type="footer"
+      
+      
+      
       {...rest}
     >
       {children}

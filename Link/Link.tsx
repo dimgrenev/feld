@@ -35,9 +35,9 @@ export const Link: React.FC<LinkProps> = ({
       target={target}
       rel={linkRel}
       className={linkClasses}
-      data-testid={id}
-      data-feld-id={id}
-      data-feld-type="link"
+      
+      
+      
       {...rest}
     >
       {children}

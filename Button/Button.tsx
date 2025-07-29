@@ -5,9 +5,8 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   id?: string;
   text: string;
   variant?: 'primary' | 'secondary' | 'accent' | 'danger' | 'ghost' | 'default' | 'outlined' | 'round';
-  size?: 'small' | 'medium' | 'large';
   fullWidth?: boolean;
-  textAlign?: 'left' | 'center' | 'right';
+  align?: 'left' | 'center' | 'right';
   disabled?: boolean;
   loading?: boolean;
   icon?: React.ReactNode;
@@ -19,9 +18,8 @@ const Button: React.FC<ButtonProps> = ({
   id,
   text, 
   variant = 'primary', 
-  size = 'medium',
   fullWidth = false,
-  textAlign = 'center',
+  align = 'center',
   disabled = false,
   loading = false,
   icon,
@@ -35,9 +33,8 @@ const Button: React.FC<ButtonProps> = ({
     'feld-level-0',
     'text-m',
     variant && `feld-button--${variant}`,
-    size && `feld-button--${size}`,
     fullWidth && 'feld-button--stretch',
-    textAlign && `feld-button--text-${textAlign}`,
+    align && `feld-button--text-${align}`,
     loading && 'feld-button--loading',
     disabled && 'feld-button--disabled',
     className
@@ -53,9 +50,7 @@ const Button: React.FC<ButtonProps> = ({
     <button 
       className={buttonClasses}
       disabled={disabled || loading}
-      data-testid={id}
-      data-feld-id={id}
-      data-feld-type="button"
+      id={id}
       onClick={handleClick}
       {...rest}
     >

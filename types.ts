@@ -31,30 +31,38 @@ export interface BaseComponentProps {
   'data-feld-type'?: string;
 }
 
-// Типы для размеров
-export type Size = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl';
-export type Spacing = 'none' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl';
-export type Radius = 'none' | 'sm' | 'md' | 'lg' | 'xl' | 'full';
+// Типы для размеров (убраны - не нужны)
+// export type Size = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl';
+// export type Spacing = 'none' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl';
+// export type Radius = 'none' | 'sm' | 'md' | 'lg' | 'xl' | 'full';
 
-// Типы для цветов
-export type Color = 
+// Типы для цветов (убраны - объединены в variant)
+// export type Color = 
+//   | 'primary'
+//   | 'secondary'
+//   | 'accent'
+//   | 'success'
+//   | 'warning'
+//   | 'error'
+//   | 'info'
+//   | 'neutral';
+
+// Типы для вариантов (объединены с цветами)
+export type Variant = 
+  | 'default'
   | 'primary'
   | 'secondary'
   | 'accent'
   | 'success'
   | 'warning'
   | 'error'
-  | 'info'
-  | 'neutral';
-
-// Типы для вариантов
-export type Variant = 
-  | 'default'
   | 'outlined'
   | 'filled'
   | 'elevated'
   | 'ghost'
-  | 'link';
+  | 'link'
+  | 'danger'
+  | 'round';
 
 // Типы для позиционирования
 export type Position = 

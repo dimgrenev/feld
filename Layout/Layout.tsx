@@ -30,9 +30,9 @@ export const Layout: React.FC<LayoutProps> = ({
   return (
     <div 
       className={layoutClasses}
-      data-testid={id}
-      data-feld-id={id}
-      data-feld-type="layout"
+      
+      
+      
       {...rest}
     >
       {header && (

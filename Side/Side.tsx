@@ -27,9 +27,9 @@ export const Side: React.FC<SideProps> = ({
     <aside 
       className={sideClasses}
       style={{ width }}
-      data-testid={id}
-      data-feld-id={id}
-      data-feld-type="side"
+      
+      
+      
       {...rest}
     >
       {children}

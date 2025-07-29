@@ -24,9 +24,9 @@ export const Container: React.FC<ContainerProps> = ({
   return (
     <Component
       className={containerClasses}
-      data-testid={id}
-      data-feld-id={id}
-      data-feld-type="container"
+      
+      
+      
       {...rest}
     >
       {children}

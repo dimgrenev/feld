@@ -3,36 +3,40 @@ import './Panel.css';
 
 export interface PanelProps {
   id?: string;
-  variant?: 'default' | 'elevated' | 'outlined';
-  size?: 'small' | 'medium' | 'large';
+  title?: string;
   children: React.ReactNode;
+  variant?: 'default' | 'elevated' | 'outlined';
   className?: string;
 }
 
 export const Panel: React.FC<PanelProps> = ({ 
   id,
-  variant = 'default',
-  size = 'medium',
+  title,
   children,
+  variant = 'default',
   className,
   ...rest 
 }) => {
   const panelClasses = [
     'feld-panel',
     `feld-panel--${variant}`,
-    `feld-panel--${size}`,
     className
   ].filter(Boolean).join(' ');
 
   return (
     <div 
       className={panelClasses}
-      data-testid={id}
-      data-feld-id={id}
-      data-feld-type="panel"
+      id={id}
       {...rest}
     >
-      {children}
+      {title && (
+        <div className="feld-panel-header">
+          <h3 className="feld-panel-title">{title}</h3>
+        </div>
+      )}
+      <div className="feld-panel-content">
+        {children}
+      </div>
     </div>
   );
 };

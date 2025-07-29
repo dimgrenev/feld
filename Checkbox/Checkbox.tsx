@@ -32,9 +32,9 @@ export const Checkbox: React.FC<CheckboxProps> = ({
         checked={checked}
         disabled={disabled}
         required={required}
-        data-testid={id}
-        data-feld-id={id}
-        data-feld-type="checkbox"
+        
+        
+        
         {...rest} 
       />
       <span className="feld-checkbox-text">{label}</span>

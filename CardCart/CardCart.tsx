@@ -48,9 +48,9 @@ export const CardCart: React.FC<CardCartProps> = ({
   return (
     <div 
       className={cartClasses}
-      data-testid={id}
-      data-feld-id={id}
-      data-feld-type="card-cart"
+      
+      
+      
       {...rest}
     >
       <div className="feld-card-cart-header">

@@ -38,9 +38,9 @@ export const Slider: React.FC<SliderProps> = ({
   return (
     <div 
       className={sliderClasses}
-      data-testid={id}
-      data-feld-id={id}
-      data-feld-type="slider"
+      
+      
+      
       {...rest}
     >
       <input

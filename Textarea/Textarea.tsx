@@ -56,9 +56,9 @@ export const Textarea: React.FC<TextareaProps> = ({
         placeholder={placeholder}
         rows={1}
         value={value}
-        data-testid={id}
-        data-feld-id={id}
-        data-feld-type="textarea"
+        
+        
+        
         className={textareaClasses}
         {...props}
       />

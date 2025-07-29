@@ -36,9 +36,9 @@ export const Card: React.FC<CardProps> = ({
     <article 
       className={cardClasses}
       onClick={onClick}
-      data-testid={id}
-      data-feld-id={id}
-      data-feld-type="card"
+      
+      
+      
       {...rest}
     >
       {media && (

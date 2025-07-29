@@ -4,51 +4,48 @@ import './List.css';
 export interface ListItem {
   id: string;
   content: React.ReactNode;
-  disabled?: boolean;
+  icon?: React.ReactNode;
+  action?: React.ReactNode;
 }
 
 export interface ListProps {
   id?: string;
   items: ListItem[];
-  variant?: 'default' | 'ordered' | 'unordered';
-  size?: 'small' | 'medium' | 'large';
+  variant?: 'default' | 'bordered' | 'striped';
   className?: string;
 }
 
 export const List: React.FC<ListProps> = ({ 
   id,
   items,
-  variant = 'unordered',
-  size = 'medium',
+  variant = 'default',
   className,
   ...rest 
 }) => {
   const listClasses = [
     'feld-list',
     `feld-list--${variant}`,
-    `feld-list--${size}`,
     className
   ].filter(Boolean).join(' ');
 
-  const ListComponent = variant === 'ordered' ? 'ol' : 'ul';
-
   return (
-    <ListComponent 
+    <div 
       className={listClasses}
-      data-testid={id}
-      data-feld-id={id}
-      data-feld-type="list"
+      id={id}
       {...rest}
     >
       {items.map((item) => (
-        <li 
-          key={item.id}
-          className={`feld-list-item ${item.disabled ? 'feld-list-item--disabled' : ''}`}
-        >
-          {item.content}
-        </li>
+        <div key={item.id} className="feld-list-item">
+          {item.icon && (
+            <div className="feld-list-icon">{item.icon}</div>
+          )}
+          <div className="feld-list-content">{item.content}</div>
+          {item.action && (
+            <div className="feld-list-action">{item.action}</div>
+          )}
+        </div>
       ))}
-    </ListComponent>
+    </div>
   );
 };
 

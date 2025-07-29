@@ -79,9 +79,9 @@ export const Accordion: React.FC<AccordionProps> = ({
     <div 
       className={accordionClasses} 
       data-variant={variant}
-      data-testid={id}
-      data-feld-id={id}
-      data-feld-type="accordion"
+      
+      
+      
       {...rest}
     >
       {items.map((item, index) => (

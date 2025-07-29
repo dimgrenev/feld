@@ -30,9 +30,9 @@ export const Article: React.FC<ArticleProps> = ({
   return (
     <article 
       className={articleClasses}
-      data-testid={id}
-      data-feld-id={id}
-      data-feld-type="article"
+      
+      
+      
       {...rest}
     >
       {title && (

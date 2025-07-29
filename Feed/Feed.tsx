@@ -14,7 +14,6 @@ export interface FeedProps {
   id?: string;
   items: FeedItem[];
   variant?: 'default' | 'timeline' | 'card';
-  size?: 'small' | 'medium' | 'large';
   className?: string;
 }
 
@@ -22,23 +21,19 @@ export const Feed: React.FC<FeedProps> = ({
   id,
   items,
   variant = 'default',
-  size = 'medium',
   className,
   ...rest 
 }) => {
   const feedClasses = [
     'feld-feed',
     `feld-feed--${variant}`,
-    `feld-feed--${size}`,
     className
   ].filter(Boolean).join(' ');
 
   return (
     <div 
       className={feedClasses}
-      data-testid={id}
-      data-feld-id={id}
-      data-feld-type="feed"
+      id={id}
       {...rest}
     >
       {items.map((item) => (

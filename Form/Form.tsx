@@ -32,9 +32,9 @@ export const Form: React.FC<FormProps> = ({
       id={id}
       onSubmit={handleSubmit}
       className={formClasses}
-      data-testid={id}
-      data-feld-id={id}
-      data-feld-type="form"
+      
+      
+      
       {...rest}
     >
       {children}

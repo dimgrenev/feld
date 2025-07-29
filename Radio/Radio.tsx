@@ -43,9 +43,9 @@ export const Radio: React.FC<RadioProps> = ({
   return (
     <div 
       className={radioClasses}
-      data-testid={id}
-      data-feld-id={id}
-      data-feld-type="radio"
+      
+      
+      
       {...rest}
     >
       {options.map((option) => (

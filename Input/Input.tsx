@@ -16,7 +16,7 @@ export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> 
   minLength?: number;
   pattern?: string;
   autocomplete?: string;
-  flow?: 'vertical' | 'horizontal';
+  align?: 'vertical' | 'horizontal';
   className?: string;
 }
 
@@ -26,7 +26,7 @@ export const Input: React.FC<InputProps> = ({
   placeholder, 
   type = 'text', 
   value, 
-  flow = 'vertical',
+  align = 'vertical',
   required = false,
   disabled = false,
   readOnly = false,
@@ -44,7 +44,7 @@ export const Input: React.FC<InputProps> = ({
   const wrapperClasses = [
     'feld-input-wrapper',
     'text-m',
-    flow === 'horizontal' ? 'flow-horizontal' : '',
+    align === 'horizontal' ? 'flow-horizontal' : '',
     error ? 'feld-input-wrapper--error' : '',
   ].filter(Boolean).join(' ');
 

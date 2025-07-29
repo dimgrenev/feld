@@ -82,9 +82,9 @@ export const Media: React.FC<MediaProps> = ({
   return (
     <div 
       className={mediaClasses}
-      data-testid={id}
-      data-feld-id={id}
-      data-feld-type="media"
+      
+      
+      
       {...rest}
     >
       {renderMedia()}

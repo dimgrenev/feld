@@ -111,9 +111,9 @@ export const Filter: React.FC<FilterProps> = ({
   return (
     <div 
       className={filterClasses}
-      data-testid={id}
-      data-feld-id={id}
-      data-feld-type="filter"
+      
+      
+      
       {...rest}
     >
       {fields.map((field) => (

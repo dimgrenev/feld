@@ -4,10 +4,8 @@ import './Text.css';
 export interface TextProps extends React.HTMLAttributes<HTMLElement> {
   id?: string;
   text: string;
-  variant?: 'body' | 'heading' | 'subheading' | 'caption' | 'label';
-  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl';
+  variant?: 'body-primary' | 'body-secondary' | 'heading-primary' | 'heading-secondary' | 'subheading-primary' | 'subheading-secondary' | 'caption-primary' | 'caption-secondary' | 'label-primary' | 'label-secondary' | 'success' | 'warning' | 'error';
   weight?: 'normal' | 'medium' | 'semibold' | 'bold';
-  color?: 'primary' | 'secondary' | 'accent' | 'success' | 'warning' | 'error';
   align?: 'left' | 'center' | 'right' | 'justify';
   truncate?: boolean;
   maxLines?: number;
@@ -18,10 +16,8 @@ export interface TextProps extends React.HTMLAttributes<HTMLElement> {
 export const Text: React.FC<TextProps> = ({ 
   id,
   text,
-  variant = 'body',
-  size = 'md',
+  variant = 'body-primary',
   weight = 'normal',
-  color = 'primary',
   align = 'left',
   truncate = false,
   maxLines,
@@ -32,9 +28,7 @@ export const Text: React.FC<TextProps> = ({
   const textClasses = [
     'feld-text',
     `feld-text--${variant}`,
-    `feld-text--${size}`,
     `feld-text--${weight}`,
-    `feld-text--${color}`,
     `feld-text--align-${align}`,
     truncate && 'feld-text--truncate',
     className
@@ -46,8 +40,8 @@ export const Text: React.FC<TextProps> = ({
 
   if (maxLines && maxLines > 1) {
     style.display = '-webkit-box';
-    style.webkitLineClamp = maxLines;
-    style.webkitBoxOrient = 'vertical';
+    (style as any).webkitLineClamp = maxLines;
+    (style as any).webkitBoxOrient = 'vertical';
     style.overflow = 'hidden';
   }
 
@@ -56,7 +50,7 @@ export const Text: React.FC<TextProps> = ({
       id={id}
       className={textClasses}
       style={style}
-      {...props}
+      {...(props as any)}
     >
       {text}
     </Component>

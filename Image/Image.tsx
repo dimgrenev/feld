@@ -37,9 +37,9 @@ export const Image: React.FC<ImageProps> = ({
       height={height}
       loading={lazy ? 'lazy' : 'eager'}
       className={imageClasses}
-      data-testid={id}
-      data-feld-id={id}
-      data-feld-type="image"
+      
+      
+      
       {...rest}
     />
   );
